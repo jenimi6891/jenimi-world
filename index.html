@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>Мой мини-сайт</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1><jenimi-world></jenimi-world></h1>
+        <h1>Привет! Добро пожаловать!</h1>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#contact">Контакты</a>
+        </nav>
     </header>
-    <main>
-        <p>Этот сайт создан с помощью HTML, CSS и GitHub Pages.</p>
-    </main>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <p>Меня зовут Александр. Я начинающий веб-дизайнер и создаю простые сайты!</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Пример работы">
+            <p>Проект 1</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Пример работы">
+            <p>Проект 2</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <form>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" placeholder="Введите имя">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Введите email">
+
+            <button type="button" onclick="showMessage()">Отправить</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
     <footer>
         <p>&copy; 2024 Александр. Все права защищены.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
